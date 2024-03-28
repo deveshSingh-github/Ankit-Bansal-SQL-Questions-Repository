@@ -1,11 +1,11 @@
 
 
+-- Select Statement 
 
+SELECT * FROM source;
+SELECT * FROM target;
 
-SELECT * FROM ankit_bansal.source;
-SELECT * FROM ankit_bansal.target;
-
-*Script to create table:
+-- Script to create table:
 
 create table source(id int, name varchar(5))
 
@@ -68,4 +68,4 @@ select id,
        case 
 	   when cnt=1 then concat('new in ', min_tn) else 'mis-match' end as comment from cte1;
 
-=========================================================
+
